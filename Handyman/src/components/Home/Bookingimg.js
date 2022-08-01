@@ -2,7 +2,7 @@ import React from 'react'
 
 function Bookingimg() {
   return (
-    <div>Bookingimg</div>
+    <div>Bookingimg and something</div>
   )
 }
 
