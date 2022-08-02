@@ -1,0 +1,50 @@
+.booking-img {
+    position: absolute;
+    height: 550px;
+    width: 670px;
+    left: 200px;
+    top: 1400px;
+    background-image: url(../../assets/bookingimg.jpeg);
+    border: 10px;
+    border-style: solid;
+    border-color: black;
+}
+
+.booking-text {
+    position: absolute;
+    height: 500px;
+    width: 400px;
+    left: 990px;
+    top: 1440px;
+    font-weight: 600;
+    text-align: left;  
+}
+
+.booking-text h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.booking-text p {
+    width: 390px;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.booking-button {
+    position: absolute;
+    font-weight: bold;
+    font-size: 19px;
+    text-align: center;
+    background-color: yellow;
+    border: none;
+    height: 54px;
+    width: 205px;
+    left: 2px;
+}
+
+
+

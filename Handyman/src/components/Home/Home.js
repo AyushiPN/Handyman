@@ -1,15 +1,20 @@
 import React from 'react'
-import Header from "../Header"
-import Footer from "../Footer"
-import './Home.css'
+import Bookingimg from './Bookingimg.js'
+import Jumbotron from './Jumbotron.js'
+import Header from '../Header.js'
+import Footer from '../Footer.js'
+import Scarousel from './Scarousel.js'
 
 function Home() {
   return (
-    <div className='container'>
+    <div>
       <Header />
-      <p>Home</p>
-      <Footer />
+      <Jumbotron />
+      {/* <Scarousel /> */}
+      <Bookingimg />
+      {/* <Footer /> */}
     </div>
+    
   )
 }
 
