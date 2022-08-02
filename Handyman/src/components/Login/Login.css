@@ -1,0 +1,152 @@
+.login{
+    padding-top: 0;
+    display: flex;
+    background: #D9D9D9;
+    border-radius: 57px;
+    width: 470px;
+    margin-top: 20px;
+}
+
+.regHeading{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
+}
+
+.login .loginHeading{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
+
+}
+
+.login .loginSub{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #848688;
+}
+
+.login .inputTxt
+{
+    background: #CECBCB;
+    border-radius: 10px;
+    width: 344px;
+    height: 30px;
+    margin-bottom: 2px;
+    border: 0px;
+    padding: 5px;
+}
+
+.login .loginBtn{
+    
+    width: 344px;
+    margin-top: 20px;
+    border: none;
+    background: #2D83B6;
+    border-radius: 25px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.createAcct{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #0F0F0F;
+    margin-bottom: 2px;
+}
+
+.createAcct .regLink{
+    color: #2D83B6;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+    .login{
+       
+        border-radius: 57px;
+        width: 318px;
+        margin-top: 20px;
+    }
+    .login .imageLog{
+        width: 205px;
+        height: 172px;
+    }
+    
+    
+    
+    .login .inputTxt
+    {
+        
+        width: 234px;
+        height: 25px;
+       
+    }
+    
+    .login .loginBtn{
+        
+        width: 234px;
+        
+    }
+    
+   
+}
+
+@media only screen and (max-width: 400px) {
+    .login{
+       
+        border-radius: 57px;
+        width: 288px;
+        margin-top: 20px;
+    }
+    .login .imageLog{
+        width: 185px;
+        height: 163px;
+    }
+    
+    .login .loginSub{
+        
+        font-size: 13px;
+       
+    }
+    
+    .login .inputTxt
+    {
+        
+        width: 211px;
+        height: 21px;
+       
+    }
+    
+    .login .loginBtn{
+        
+        width: 211px;
+        
+    }
+    
+   
+}
