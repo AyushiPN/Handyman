@@ -1,0 +1,39 @@
+.footer{
+    background-color: #100F0F;
+    margin-top: 5px;
+    width: 100%;
+    color: #FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    bottom: 0;
+    /* position: fixed; */
+}
+
+.footer .footerHeading{
+    margin: auto;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.footer p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 14px;
+    align-items: center;
+    font-weight: 800;
+}
+
+.icons{
+    display: flex;
+    float: right;
+    width: 40%;
+    padding: 2 0 2 0;
+    margin-top: 3%;
+    margin-right: 20%;
+}
