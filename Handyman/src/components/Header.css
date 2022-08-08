@@ -17,7 +17,7 @@
   }
   nav ul{
     float: right;
-    margin-right: 30px;
+    margin-right: 10px;
   }
   nav ul li{
     list-style-type: none;
@@ -33,7 +33,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 20px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -47,6 +47,8 @@ nav ul li .btn{
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 800;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
   font-size: 16px;
   line-height: 22px;
   display: flex;
@@ -57,3 +59,66 @@ nav ul li .btn{
 }
 
 
+@media only screen and (max-width: 700px) and (min-width: 400px){
+  nav ul li .btn{
+    display: none;
+
+  }
+
+  nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  nav ul{
+    float: right;
+    margin-right: 0;
+
+  }
+
+  nav .logo{
+    float: right;
+    display: none;
+}
+
+  nav ul li a{
+    padding: 0.4em;
+    font-weight: 600;
+    font-size: 0.8em;
+   
+    float: right;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  nav ul li .btn{
+    display: none;
+
+  }
+
+  nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  nav ul{
+    float: right;
+    margin-right: 0;
+
+  }
+
+  nav .logo{
+    float: right;
+    display: none;
+}
+
+  nav ul li a{
+    padding: 0.4em;
+    font-weight: 600;
+    font-size: 0.8em;
+   
+    float: right;
+  }
+}

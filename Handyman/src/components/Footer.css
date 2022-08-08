@@ -1,11 +1,11 @@
 .footer{
+    display: flex;
     background-color: #100F0F;
     margin-top: 5px;
     width: 100%;
     color: #FFFFFF;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-bottom: 0;
     bottom: 0;
     position: fixed;
 }
@@ -36,4 +36,31 @@
     padding: 2 0 2 0;
     margin-top: 3%;
     margin-right: 20%;
+}
+
+@media only screen and (max-width: 700px) and (min-width: 400px){
+    .footer .footerHeading{
+        margin: auto;
+        font-weight: 600;
+        font-size: 1em;
+        margin-left: 3em;
+    }
+    
+    .footer .footerC1{
+        margin-top: 1em;
+        padding: 0.5em;
+    }
+
+    .footer .footerC2{
+        padding: 0.5em;
+    }
+    .footer .footerC2 p{
+      padding-left: 1em;
+      padding-right: 1em;
+      margin-left: 1em;
+    }
+
+    .footer .iName{
+        display: none;
+    }
 }

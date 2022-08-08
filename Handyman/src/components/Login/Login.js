@@ -24,7 +24,7 @@ function Login() {
       <input type="text" className='inputTxt' placeholder = 'Enter Username' name='user' value={formData.user} onChange={(e) => setFormData({...formData, user: e.target.value})}/>
       <br />
       <input type="password" className='inputTxt' placeholder = 'Enter Password' name='pwd' value={formData.pwd} onChange={(e) => setFormData({...formData, pwd: e.target.value})}/>
-       
+       <p><Link to="/forgot" className='fogLink'>Forgot Password ?</Link></p>
         <button type="submit" className='loginBtn' onClick={handleSubmit}>Login</button>
         <p className='createAcct'>Don't have an account! 
         <Link to='/register' className='regLink'>Register</Link> 

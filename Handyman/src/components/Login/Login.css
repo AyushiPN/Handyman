@@ -7,13 +7,20 @@
     margin-top: 20px;
 }
 
+.otpImg{
+    width: 140px;
+    height: 140px;
+    margin-top: 1em;
+}
+
 .regHeading{
-    margin-top: 50px;
-    margin-bottom: 10px;
+    margin-top: 1.5em;
+    margin-bottom: 1em;  
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 26px;
+    
     text-align: center;
 }
 
@@ -85,6 +92,27 @@
     text-decoration: none;
 }
 
+
+.login .handyReg{
+    color: #2D83B6;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    float: right;
+    margin-top: 3em;
+    margin-right: 3em;
+    margin-bottom: 1em;   
+    /* text-align: center; */
+}
+
+.login .fogLink
+{
+    color: #2D83B6;
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 600px) and (min-width: 400px) {
     .login{
        
@@ -97,7 +125,10 @@
         height: 172px;
     }
     
-    
+    .login .otpImg{
+        width: 100px;
+        height: 100px;
+    }
     
     .login .inputTxt
     {
@@ -112,7 +143,22 @@
         width: 234px;
         
     }
+
+    .login .handyReg{
+       
+        font-size: 14px;
+        margin-top: 0.5em;
+        margin-bottom: 1em;   
+        text-align: center;
+    }
     
+    .regHeading{
+        margin-top: 1.5em;
+      
+        font-weight: 600;
+        font-size: 26px;
+         text-align: center;
+    }
    
 }
 
@@ -148,5 +194,19 @@
         
     }
     
-   
+    .login .handyReg{
+       
+        font-size: 14px;
+        margin-top: 0.5em;
+        margin-bottom: 1em;   
+        text-align: center;
+    }
+    
+    .regHeading{
+        margin-top: 1.5em;
+      
+        font-weight: 600;
+        font-size: 26px;
+         text-align: center;
+    }
 }
