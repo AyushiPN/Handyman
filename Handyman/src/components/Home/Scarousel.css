@@ -1,0 +1,20 @@
+.scarousel_heading_box{
+    height: 90px;
+    width: 462px;
+    left: 500px;
+    top: 772px;
+    border: 5px;
+    position: absolute;
+    text-align: center;
+}
+
+.scarousel_heading{
+    padding-top: 18px;
+    font-family: Sans-Serif;
+    font-size: 30px;
+    font-weight: 800;
+    color: black;
+    text-transform: uppercase;
+    margin-top: 10px;
+
+}

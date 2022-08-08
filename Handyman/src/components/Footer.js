@@ -12,6 +12,7 @@ import DateRangeIcon from '@mui/icons-material/DateRange';
 function Footer() {
   return (
     <div className='footer'>
+      <div className='container'>
       <Box Box sx={{ width: '100%' }}>
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         <Grid item md={4} xs={1}>
@@ -20,7 +21,7 @@ function Footer() {
           </div>
         </Grid>
         <Grid item md={8} xs={1}>
-          <Grid container spacing={3}>
+          <Grid container spacing={3} className='footerC1'>
             <Grid item xs={6}>
               <p className='footerContent'>Address</p>
             </Grid>
@@ -28,7 +29,7 @@ function Footer() {
               <p className='footerContent'>Mail</p>
             </Grid>
           </Grid>
-          <Grid container spacing={2}>
+          <Grid container spacing={2} className='footerC2'>
             <Grid item xs={6}>
               <p className='footerContent'><DateRangeIcon/>Date</p>
             </Grid>
@@ -44,21 +45,22 @@ function Footer() {
     <div className='icons'>
     <Grid container spacing={0}>
               <Grid item xs={3}>
-                <TwitterIcon />Twitter
+                <TwitterIcon /><p className='iName'>Twitter</p>
               </Grid>
               <Grid item xs={3}>
-                <EmailIcon />Gmail
+                <EmailIcon /><p className='iName'>Gmail</p>
               </Grid>
               <Grid item xs={3}>
-                <FacebookIcon />FaceBook
+                <FacebookIcon /><p className='iName'>FaceBook</p>
               </Grid>
               <Grid item xs={3}>
-                <InstagramIcon />Instagram
+                <InstagramIcon /><p className='iName'>Instagram</p>
               </Grid>
             </Grid>
     </div>
     </Box>
-  </div>
+      </div>
+    </div>
   )
 }
 

@@ -1,0 +1,151 @@
+.otp{
+    width: 8em;
+    margin-top: 2px;
+    border: none;
+    background: #2D83B6;
+    border-radius: 25px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.otpImg{
+    width: 140px;
+    height: 140px;
+    margin-top: 1em;
+}
+
+.login{
+    padding-top: 0;
+    display: flex;
+    background: #D9D9D9;
+    border-radius: 57px;
+    width: 470px;
+    margin-top: 20px;
+}
+
+
+
+.login .loginHeading{
+    margin-top: 20px;
+    margin-bottom: 1em;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
+
+}
+
+.login .loginSub{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #848688;
+}
+
+.login .inputTxt
+{
+    background: #CECBCB;
+    border-radius: 10px;
+    width: 344px;
+    height: 30px;
+    margin-bottom: 2px;
+    border: 0px;
+    padding: 5px;
+}
+
+
+.createAcct{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #0F0F0F;
+    margin-bottom: 2px;
+}
+
+.createAcct .regLink{
+    color: #2D83B6;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+    .login{
+       
+        border-radius: 57px;
+        width: 318px;
+        margin-top: 20px;
+    }
+    
+    .login .otpImg{
+        width: 100px;
+        height: 100px;
+    }
+    
+    .login .inputTxt
+    {
+        
+        width: 234px;
+        height: 25px;
+       
+    }
+    
+    .login .otp{
+        
+        width: 234px;
+        margin-left: 3.2em;
+        padding: 1em;
+        
+    }
+    
+   
+}
+
+@media only screen and (max-width: 400px) {
+    .login{
+       
+        border-radius: 57px;
+        width: 288px;
+        margin-top: 20px;
+    }
+    .login .imageLog{
+        width: 185px;
+        height: 163px;
+    }
+    
+    .login .loginSub{
+        
+        font-size: 13px;
+       
+    }
+    
+    .login .inputTxt
+    {
+        
+        width: 211px;
+        height: 21px;
+       
+    }
+    
+    .login .loginBtn{
+        
+        width: 211px;
+        
+    }
+    
+   
+}

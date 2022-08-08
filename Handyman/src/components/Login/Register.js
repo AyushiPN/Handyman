@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Login.css'
 import {Link} from 'react-router-dom'
+import Grid from '@mui/material/Grid';
 
 function Register() {
   const [formData, setFormData] = useState({
@@ -22,7 +23,15 @@ function Register() {
     <div className='login container'>
       {/* <img className='imageLog' src={Limage} alt="login image"/> */}
       <form className='container' method='POST'>
-        <h1 className=' regHeading'>Register</h1>
+        <Grid container>
+          <Grid md={6} sm={12} xs={12}>
+            <h1 className=' regHeading'>Register</h1>
+          </Grid>
+          <Grid md={6} sm={12} xs={12}>
+            <Link to="/handymanreg" className='handyReg'>Are you a Handyman?</Link>
+          </Grid>
+        </Grid>
+  
         <p className='loginSub'>Enter details below to continue</p>
         <input type="text" className='inputTxt' placeholder = 'Enter Name' name="name" value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})}/>
         <br />

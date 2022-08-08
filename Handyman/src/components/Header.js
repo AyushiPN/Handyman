@@ -14,7 +14,7 @@ function Header() {
         <ul>
             <li className='headerItem'><Link to="/services">Services</Link></li>
             <li className='headerItem'><Link to="/about">About</Link></li>
-            <li className='headerItem'><Link to="/login">Login</Link></li>
+            <li className='headerItem'><Link to="/login">Login/Register</Link></li>
             <li className='headerItem'>
               <Link to="/booking">
                 <div className='btn'>
