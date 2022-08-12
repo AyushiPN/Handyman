@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Simage{
+    background-image: url('../../assets/ser.png');
+    background-size: webkit contain;
+    background-repeat: no-repeat;
+    height: 80vh;
+    margin-top: 0%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.jumboText{
+    text-align: center;
+    width: 100%;
+}
+.headingJ{
+ 
+    font-size : 3em;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    text-shadow: 0 0 2px #6db0f2;
+    color : white;
+}
+
+@media only screen and (max-width: 700px) and (min-width: 400px){
+    .headingJ{
+    
+        font-weight: 600;
+        font-size: 1.5em;
+     
+    }
+    .Simage{
+        
+        height: 50vh;
+        
+    
+    }
+}
