@@ -22,7 +22,7 @@ function Register() {
     
     <div className='login container'>
       {/* <img className='imageLog' src={Limage} alt="login image"/> */}
-      <form className='container' method='POST'>
+      <form className='container' method='POST' action='../../reg'>
         <Grid container>
           <Grid md={6} sm={12} xs={12}>
             <h1 className=' regHeading'>Register</h1>
@@ -41,9 +41,9 @@ function Register() {
         <br />
         <input type="text" className='inputTxt' placeholder = 'Enter Username' name='user' value={formData.user} onChange={(e) => setFormData({...formData, user: e.target.value})}/>
         <br />
-        <input type="password" className='inputTxt' placeholder = 'Enter Password' name='pwd' value={formData.pwd} onChange={(e) => setFormData({...formData, pwd: e.target.value})}/>
+        <input type="password" className='inputTxt' placeholder = 'Enter Password' name='password' value={formData.pwd} onChange={(e) => setFormData({...formData, pwd: e.target.value})}/>
         
-          <button type="submit" onClick={handleSubmit} className='loginBtn'>Register</button>
+          <button type="submit"  className='loginBtn'>Register</button>
           <p className='createAcct'>Already registered  
           <Link to='/login' className='regLink'>Login</Link> 
           </p>

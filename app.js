@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 require("./db/connection");
 const register = require('./models/addUserModel');
+const check =require('./models/checkUserModel');
 
 
 const bodyparser = require('body-parser');
@@ -20,7 +21,10 @@ app.post("/reg", async(req, res) => {
             password : req.body.password
 
         });
-        const registered= await registeruser.save();
+        await console.log(await check.check(req.body.email));
+        //const registered= await registeruser.save();
+    
+        res.redirect("/otp");
     }
     catch(error)
     {
@@ -31,7 +35,7 @@ app.post("/reg", async(req, res) => {
 });
 
 app.get("/" , (req,res) =>{
-
+    res.redirect('');
 });
 
 const PORT = process.env.PORT || 8080;
