@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost:27017/HandyMan" , {
+mongoose.connect("mongodb+srv://Yash:HandyMan@cluster0.ybe2pq5.mongodb.net/?retryWrites=true&w=majority" , {
     useNewUrlParser : true,
     
 }).then(() => {

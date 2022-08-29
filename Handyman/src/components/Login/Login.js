@@ -24,7 +24,7 @@ function Login() {
     e.preventDefault();
     
     const {username ,password} =formData;
-    const res = await fetch("/log",{
+    const res = await fetch('/log',{
       method : "POST",
       headers : {
         "Content-Type" :"application/json"

@@ -1,6 +1,5 @@
 const check = require("../models/checkUserModel");
 const log = async (req,res) =>{
-    console.log("error");
     try
     {
         const {username ,password} = req.body;
@@ -9,11 +8,13 @@ const log = async (req,res) =>{
         
         if(await check.checkuserpass(username,password))
         {
+            req.session.isAuth =true;
+            req.session.name = await check.getName(username);
+            console.log("Executed");
             res.status(200).json({error : "Login successfully"});
         }
         else
         {
-            
             res.status(404).json({error : "Invalid Credential"});
         }
     }

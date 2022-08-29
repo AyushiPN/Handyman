@@ -23,7 +23,7 @@ module.exports = {
     },
     checkuserpass : async(user,pass) =>
     {
-        console.log(await model.findOne({username : user,password : pass}))
+        //console.log(await model.findOne({username : user,password : pass}))
         if(await model.findOne({username : user,password : pass})== null)
         {
             return false;
@@ -32,5 +32,10 @@ module.exports = {
         {
             return true;
         }
+    },
+    getName : async(username) =>
+    {
+        const  obj = await model.findOne({username : username});
+        return obj.name;
     }
 };
