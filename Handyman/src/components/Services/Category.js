@@ -19,7 +19,7 @@ function Category() {
         <Grid container className="outer">
             <Grid xs={12} sm={6} md={4}>
                 <div className='beauty cout'>
-                    <Link to='/about'>
+                    <Link to='/servicecard'>
                         <div className="card container">
                             <div className='cardImage'>
                                 <img src ={beauty} alt='beauty' />
