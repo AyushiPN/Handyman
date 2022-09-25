@@ -1,61 +1,21 @@
 import React, { useState } from 'react'
 import './Login.css'
-import {Link,useNavigate} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import Grid from '@mui/material/Grid';
 
-
-
-function  Register() {
-  const navigate = useNavigate();
+function Register() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     number: "",
-    username: "",
-    password:""
-  });
-  let name , value;
+    user: "",
+    pwd:""
+  })
 
-  const handleInputs =(e) =>
-  {
-    console.log(e);
-    name = e.target.name;
-    value = e.target.value;
-
-    setFormData({...formData,[name]:value});
-  }
-
-  const PostData = async (e) => {
-    e.preventDefault();
-    
-    const {name ,email,number,username,password} = formData;
-    console.log(name);
-    const res= await fetch("/reg",{
-      method : "POST",
-      headers : {
-        "Content-Type" :"application/json"
-      },
-      body:JSON.stringify({
-        name ,email,number,username,password
-      })
-    });
-
-    const data =await res.json();
-    
-    if(res.status === 422 || !data)
-    {
-      alert("Already Email is Register");
-    }
-    else if(res.status === 423 )
-    {
-      alert("UserName is Taken");
-    }
-    else if(res.status === 201)
-    {
-      navigate("/otp");
-    }
-    
-
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    console.log(formData)
+  
   }
 
   return (
@@ -73,17 +33,17 @@ function  Register() {
         </Grid>
   
         <p className='loginSub'>Enter details below to continue</p>
-        <input type="text" className='inputTxt' placeholder = 'Enter Name' name="name" value={formData.name} onChange={handleInputs} />
+        <input type="text" className='inputTxt' placeholder = 'Enter Name' name="name" value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})}/>
         <br />
-        <input type="email" className='inputTxt' placeholder = 'Enter Email' name='email' value={formData.email} onChange={handleInputs}/>
+        <input type="email" className='inputTxt' placeholder = 'Enter Email' name='email' value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})}/>
         <br />
-        <input type="text" className='inputTxt' placeholder = 'Enter Phone Number' name='number' value={formData.number} onChange={handleInputs}/>
+        <input type="text" className='inputTxt' placeholder = 'Enter Phone Number' name='number' value={formData.number} onChange={(e) => setFormData({...formData, number: e.target.value})}/>
         <br />
-        <input type="text" className='inputTxt' placeholder = 'Enter Username' name='username' value={formData.username} onChange={handleInputs}/>
+        <input type="text" className='inputTxt' placeholder = 'Enter Username' name='user' value={formData.user} onChange={(e) => setFormData({...formData, user: e.target.value})}/>
         <br />
-        <input type="password" className='inputTxt' placeholder = 'Enter Password' name='password' value={formData.password} onChange={handleInputs}/>
+        <input type="password" className='inputTxt' placeholder = 'Enter Password' name='pwd' value={formData.pwd} onChange={(e) => setFormData({...formData, pwd: e.target.value})}/>
         
-          <button type="submit" onClick={PostData} className='loginBtn'>Register</button>
+          <button type="submit" onClick={handleSubmit} className='loginBtn'>Register</button>
           <p className='createAcct'>Already registered  
           <Link to='/login' className='regLink'>Login</Link> 
           </p>
