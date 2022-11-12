@@ -25,12 +25,12 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        run: sudo npm ci
 
       - name: Check pm2 and node version
         run: |
-          pm2 -v
-          node -v
+          sudo pm2 -v
+          sudo node -v
 
       - name: 'Kill all running pm2 processes'
         run: pm2 kill
