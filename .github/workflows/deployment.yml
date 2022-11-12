@@ -33,7 +33,7 @@ jobs:
           sudo node -v
 
       - name: 'Kill all running pm2 processes'
-        run: pm2 kill
+        run: sudo pm2 kill
 
       - name: 'Git pull the latest code'
         run: git pull
