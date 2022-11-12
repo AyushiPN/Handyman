@@ -1,0 +1,10 @@
+{
+    "apps": [
+      {
+        "name": "handyman",
+        "script": "npm",
+        "args": "start",
+        "watch": false
+      }
+    ]
+  }
